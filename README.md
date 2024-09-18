@@ -21,7 +21,7 @@ A solid understanding of SQL can assist in numerous scenarios in your role.
 
 Please work on your own, and if you get completely stuck, feel free to reach out to the facilitator rather than other team members.
 
-Manage your time wisely, you have up to 90 minutes for 11 questions. What you do not complete at the end of the 90mins you can mark as not done and submit the form. 
+Manage your time wisely, you have up to 90 minutes for 11 questions. What you do not complete at the end of the 90 mins you can mark as not done and submit the form. You must submit the form within 90 minutes, but you can continue with the parts you do not get to in your own time. 
 
 All answers can be submitted here, a copy of your submission will be sent to you via email on completion: 
 https://forms.gle/HvwyWfwMpK17L4A19
@@ -209,7 +209,7 @@ Logs user activity for auditing purposes.
 SELECT user_id, username FROM users WHERE year_of_birth = 1956
 ```
 Describe how you would investigate and prove that this misses the index. 
-Describe how to change thid query so that it hits the index
+Describe the change your would make to ensure that it hits the index. 
 
 ---
 
