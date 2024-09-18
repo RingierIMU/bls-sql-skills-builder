@@ -232,8 +232,8 @@ ORDER BY total_leads DESC;
 ---
 
 ### **Question 8**: Create a Query for Leads Submitted by Guest and Registered Users
-
-**Question**: Write a query that returns the total number of leads submitted by **guest users** (those with `NULL` in `user_id`) and **registered users** for each listing. Additionally, the query should return the name of the user who submitted each lead, and for guest users, it should display `"Guest"` instead of `NULL`. However, the query is not working as expected. Identify and fix the issue.
+SKIP QueSTION 8
+**Question**: ~Write a query that returns the total number of leads submitted by **guest users** (those with `NULL` in `user_id`) and **registered users** for each listing. Additionally, the query should return the name of the user who submitted each lead, and for guest users, it should display `"Guest"` instead of `NULL`. However, the query is not working as expected. Identify and fix the issue.~
 
 
 ---
