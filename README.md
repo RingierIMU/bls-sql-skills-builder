@@ -26,9 +26,8 @@ Manage your time wisely, you have up to 90 minutes for 11 questions. What you do
 All answers can be submitted here, a copy of your submission will be sent to you via email on completion: 
 https://forms.gle/HvwyWfwMpK17L4A19
 
-If you finish early, we have a few bonus questions to push you a little further with some more advanced challenges. Alternatively, come up with your own questions to share with the team. 
+If you finish early, we have a few bonus questions at the end of this doc to push you a little further with some more advanced challenges. Alternatively, come up with your own questions to share with the team. 
 
-See the addendum at the end 
 
 **Instructions for Query Tool**:  
 You may use any SQL client of your choice to connect to the database. 
