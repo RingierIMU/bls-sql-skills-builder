@@ -176,25 +176,22 @@ Logs user activity for auditing purposes.
 
 ---
 
-
 ### **Question 2**: Retrieve All Active Listings with Their User Information
 
 **Question**: Write a query to retrieve all listings (ID and Title) that are currently active (`status = 'active'`) and include the username and email of the user who created the listing.
 
 ---
 
-* * *
-
 ### **Question 3**: Retrieve the Number of Leads Per Listing
 
 **Question**: Write a query to return the `listing_id`, `title`, and the total number of leads for each listing. The result should include all listings, even those that have no leads.
-
-
 
 ---
 ### **Question 4**: Retrieve Recent User Activity for a Specific User 
 
 **Question**: Write a query to retrieve the most recent 10 activities of a user, including the `activity_type`, `timestamp` and `listing_id` from the `activity_details` column. Assume the `user_id` is 100
+
+---
 
 
 ### **Question 5**: Find Listings in a Specific Category and Subcategories
