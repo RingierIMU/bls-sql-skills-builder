@@ -51,6 +51,7 @@ We've got a bunch of questions for you to answer based on this database schema. 
  
 Below are the credentials you can use to connect and run queries on the database 
 - **Host:** `sandbox.cwvzrdsmrbyu.eu-west-1.rds.amazonaws.com`
+- **Host 2: (if connection limit reached) ** sandbox-2.cwvzrdsmrbyu.eu-west-1.rds.amazonaws.com
 - **Username:** `bls`
 - **Password:** `q3G42vcoUSqnfAbTsfIXbsOmcnLHYjXemBcyH9NW`
 - **Database:** `marketplace-skill-builder-challenge`
