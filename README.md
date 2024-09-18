@@ -6,14 +6,14 @@
 
 Today’s session is designed to give you a chance to flex some mysql muscle. 
 There are some basic, and some intermediate questions in this challenge. 
-But no matter your level, all questions could be answered with a little help from your AI friends.
+But no matter your level of exposure or experience with MySql, all questions could be answered with a little help from your AI friends.
 
-All of these questions represent the types of queries we might be expected to write in our day-to-day work.
+All of these questions represent the types of queries we might be expected to write in our day-to-day work as developers, or quetions we might ask in our roles as non developers.
 
 As part of this process, we encourage you to use tools like Google and AI where appropriate. 
 These technologies are powerful force multipliers in our work, and understanding how and when to leverage them effectively is key. 
 
-In helping to track the impact of these tools, we ask for feedback on each question to indicate which tools (if any), you leaned on. 
+In helping to track the impact of these tools, we ask for feedback on each question to indicate which tools (if any), you decided to lean on. If you don't need them, don't use them. But treat it as you would for a normal daily task, reaching out where required for the extra assistance. 
 
 You may wonder, why focus on MySQL? While MySQL is nothing new, and often abstracted away by ORMs, 
 it remains an essential tool in our broader skill set. Even though many of our staff don’t use it directly every day, fluency in SQL is fundamental across various roles—from QAs to Developers, Platform Engineers, and Product Managers. 
@@ -21,26 +21,32 @@ A solid understanding of SQL can assist in numerous scenarios in your role.
 
 Please work on your own, and if you get completely stuck, feel free to reach out to the facilitator rather than other team members.
 
-Manage your time wisely, you have up to 90 minutes for 11 questions. 
-If you finish early, we have a few bonus questions to push you a little further with some more advanced challenges. 
+Manage your time wisely, you have up to 90 minutes for 11 questions. What you do not complete at the end of the 90mins you can mark as not done and submit the form. 
+
+All answers can be submitted here, a copy of your submission will be sent to you via email on completion: 
+https://forms.gle/HvwyWfwMpK17L4A19
+
+If you finish early, we have a few bonus questions to push you a little further with some more advanced challenges. Alternatively, come up with your own questions to share with the team. 
+
 See the addendum at the end 
-
-
 
 **Instructions for Query Tool**:  
 You may use any SQL client of your choice to connect to the database. 
-If you don’t already have one installed, you can use options like **MySQL Workbench** on Windows, or **Sequel Ace** on Mac. Others suggestions include **DBeaver** or  **Tableplus** or some IDE's have it built in directly.  If you don't even know what MySQL is, or what a MySql client is, I suggest you start with a ChatGPT conversation to coach you through a basic explanation and some guidelines t getting the clients set up.  
-Ensure that you test your queries in the tool before submitting answers. If you encounter issues, troubleshooting and resolving them is part of the challenge!
+If you don’t already have one installed, you can use options like **MySQL Workbench** on Windows, or **Sequel Ace** on Mac. Others suggestions include **DBeaver** or  **Tableplus** or some IDE's have this functionality built in directly.  If you don't even know what MySQL is, or what a MySql client is, I suggest you start with a ChatGPT conversation to coach you through a basic explanation and some guidelines on getting the client set up.  
+
+Where neccesary, test your queries in the tool before submitting answers. You'll have read only access so no writes, updates or changes to table structure will be possible.  If you encounter issues, troubleshooting and resolving them is part of the challenge!
+
 
 ---
 
-Let’s dive in and see how far your skills—and the tools at your disposal—can take you.
+**Let’s dive in and see how far your skills—and the tools at your disposal—can take you.**
 
 ### Marketplace Database Schema
 
 Below is a database schema for a simple online marketplace. The marketplace allows users to create listings for items they want to sell, and other users can view these listings and express interest by leaving a message (lead) for the seller. The schema also includes user activity logging for auditing purposes.
 
-We've got a bunch of questions for you to answer based on this database schema. Assume its all MySql 8.0. 
+We've got a bunch of questions for you to answer based on this database schema. Assume its all MySql 8.0.
+ 
 Below are the credentials you can use to connect and run queries on the database 
 - **Host:** `sandbox.cwvzrdsmrbyu.eu-west-1.rds.amazonaws.com`
 - **Username:** `bls`
@@ -50,13 +56,13 @@ Below are the credentials you can use to connect and run queries on the database
 
 This data is all faked, generated, made up data, and only serves the purpose of giving you a challenge to work on.
 Don't look too closely at the data, but rather understand the schema and relationships between the tables. 
-You will only have read permissions on these tables, since many users are doing this at the same time. 
 
 The challenge includes questions related to:
 
 1. Connecting and retrieving basic data from the database.
 2. Writing SQL queries to answer "real world" questions about the database marketplace data.
 3. Debugging and Fixing database queries.
+
 ---
 ### **Database Schema**
 
