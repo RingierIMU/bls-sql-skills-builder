@@ -26,7 +26,7 @@ Manage your time wisely, you have up to 90 minutes for 11 questions. What you do
 All answers can be submitted here, a copy of your submission will be sent to you via email on completion: 
 https://forms.gle/HvwyWfwMpK17L4A19
 
-If you finish early, we have a few bonus questions at the end of this doc to push you a little further with some more advanced challenges. Alternatively, come up with your own questions to share with the team. 
+If you finish early, we have a few bonus questions at the end of this doc to push you a little further with some more advanced challenges. These bonus questions can optionally be done in your own time, and you can submit answers to a different form linked below if you would like to. 
 
 
 **Instructions for Query Tool**:  
@@ -374,7 +374,7 @@ CREATE INDEX idx_user_activity_timestamp ON user_activity_log (user_id, timestam
 
 
 
-## Bonus Questions: (Keep track of your answers yourself and DM them to Dylan)
+## Bonus Questions: (Answers can be submitted to a new form [here](https://forms.gle/j49yecsA4zJCLktNA) anytime during or after the challenge. No time limit)
 
 ---
 
