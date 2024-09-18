@@ -196,7 +196,7 @@ Logs user activity for auditing purposes.
 
 ### **Question 5**: Find Listings in a Specific Category and Subcategories
 
-**Question**: Write a query to return all listings in the category "3" and any subcategories under 3. Assume an unknown depth category tree and include all category children in your query.  
+**Question**: Write a query to return all listings in the category "3" (including any subcategories under 3). Assume an unknown depth category tree and include all category children in your query.  
 
 
 
