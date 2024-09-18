@@ -32,7 +32,9 @@ See the addendum at the end
 
 **Instructions for Query Tool**:  
 You may use any SQL client of your choice to connect to the database. 
-If you don’t already have one installed, you can use options like **MySQL Workbench** on Windows, or **Sequel Ace** on Mac. Others suggestions include **DBeaver** or  **Tableplus** or some IDE's have this functionality built in directly.  If you don't even know what MySQL is, or what a MySql client is, I suggest you start with a ChatGPT conversation to coach you through a basic explanation and some guidelines on getting the client set up.  
+If you don’t already have one installed, you can use options like **MySQL Workbench** on Windows, or **Sequel Ace** on Mac. Others suggestions include **DBeaver** or  **Tableplus** or some IDE's have this functionality built in directly.  
+
+If you don't even know what MySQL is, or what a MySql client is, I suggest you start with a ChatGPT conversation to coach you through a basic explanation and some guidelines on getting the client set up.  Use this time as a self study session for your own level with a goal of understanding and solving as many questions as possible. 
 
 Where neccesary, test your queries in the tool before submitting answers. You'll have read only access so no writes, updates or changes to table structure will be possible.  If you encounter issues, troubleshooting and resolving them is part of the challenge!
 
