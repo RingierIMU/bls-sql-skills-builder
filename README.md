@@ -19,7 +19,7 @@ You may wonder, why focus on MySQL? While MySQL is nothing new, and often abstra
 it remains an essential tool in our broader skill set. Even though many of our staff don’t use it directly every day, fluency in SQL is fundamental across various roles—from QAs to Developers, Platform Engineers, and Product Managers. 
 A solid understanding of SQL can assist in numerous scenarios in your role.
 
-Please work on your own, and if you get completely stuck, feel free to reach out to the facilitator rather than other team members.
+Please work on your own, and if you get completely stuck, feel free to reach out to the facilitator (in #bls-skills-builder on slack) rather than other team members.
 
 Manage your time wisely, you have up to 90 minutes for 11 questions. What you do not complete at the end of the 90 mins you can mark as not done and submit the form. You must submit the form within 90 minutes, but you can continue with the parts you do not get to in your own time. 
 
