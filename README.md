@@ -8,7 +8,7 @@ Today’s session is designed to give you a chance to flex some mysql muscle.
 There are some basic, and some intermediate questions in this challenge. 
 But no matter your level of exposure or experience with MySql, all questions could be answered with a little help from your AI friends.
 
-All of these questions represent the types of queries we might be expected to write in our day-to-day work as developers, or quetions we might ask in our roles as non developers.
+All of these questions represent the types of queries we might be expected to write in our day-to-day work as developers, or questions we might ask in our roles as non developers.
 
 As part of this process, we encourage you to use tools like Google and AI where appropriate. 
 These technologies are powerful force multipliers in our work, and understanding how and when to leverage them effectively is key. 
