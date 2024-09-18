@@ -37,6 +37,7 @@ If you don't even know what MySQL is, or what a MySql client is, I suggest you s
 
 Where neccesary, test your queries in the tool before submitting answers. You'll have read only access so no writes, updates or changes to table structure will be possible.  If you encounter issues, troubleshooting and resolving them is part of the challenge!
 
+At the end of this session, you can keep the convo alive in #bls-skills-builder
 
 ---
 
@@ -373,8 +374,7 @@ CREATE INDEX idx_user_activity_timestamp ON user_activity_log (user_id, timestam
 
 
 
-## Bonus Questions: (for your own learning and enjoyment)
-
+## Bonus Questions: (Keep track of your answers yourself and DM them to Dylan)
 
 ---
 
@@ -383,40 +383,63 @@ CREATE INDEX idx_user_activity_timestamp ON user_activity_log (user_id, timestam
 **Question**: Write a query to identify users whose listings have a **conversion rate** (leads per listing) below the 75th percentile of conversion rates across all listings. The result should include the `user_id`, `username`, total listings, total leads, and the user's conversion rate.
 Use the NTILE function to assist with the calculations.
  
---- 
-**Answer**:
+---
 
-**Expected SQL**:
-```mysql
-WITH conversion_rates AS (
-    SELECT 
-        listings.user_id, 
-        COUNT(listings.listing_id) AS total_listings,
-        COUNT(leads.lead_id) AS total_leads,
-        (COUNT(leads.lead_id) / COUNT(listings.listing_id)) AS conversion_rate
-    FROM listings
-    LEFT JOIN leads ON listings.listing_id = leads.listing_id
-    GROUP BY listings.user_id
-),
-ranked_conversions AS (
-    SELECT 
-        cr.*, 
-        NTILE(4) OVER (ORDER BY conversion_rate) AS percentile_rank
-    FROM conversion_rates cr
-)
-SELECT 
-    users.user_id, 
-    users.username, 
-    rc.total_listings, 
-    rc.total_leads, 
-    rc.conversion_rate
-FROM ranked_conversions rc
-JOIN users ON rc.user_id = users.user_id
-WHERE rc.percentile_rank <= 3;
+### **Bonus Question 2**:
+
+**Question**: Write a query that returns all listings (title, and listing ID) which do not have any leads. 
+ 
+---
+
+### **Bonus Question 3**: 
+
+**Question**: Find Users Who Logged in on Two Consecutive Days. Return their name and ID. 
+ 
+---
+
+### **Bonus Question 4**: 
+
+**Question**: Find the Time Difference Between User Registration and Their First Lead. Return the User ID, Name and the time difference for each user. 
+ 
+---
+
+### **Bonus Question 5**: 
+
+**Question**: More recent MySQL version have features that could improve querying. Look at the below queries and rewrite each one to be more modern and efficient. 
+
+
+A)  Find Categories with More Listings Than the Average
+```
+SELECT c.*
+FROM categories c
+WHERE (SELECT COUNT(*) FROM listings l WHERE l.category_id = c.id) > (
+    SELECT AVG(listing_count)
+    FROM (SELECT COUNT(*) AS listing_count FROM listings GROUP BY category_id) AS avg_table
+);
 ```
 
-**Explanation**:
-- **conversion_rates CTE**: This common table expression calculates the conversion rate (leads per listing) for each user.
-- **percentile_threshold CTE**: This CTE calculates the 75th percentile of conversion rates using `PERCENTILE_CONT`.
-- **Final Query**: The final query identifies users whose conversion rate is below the 75th percentile threshold by comparing each user's conversion rate against the calculated value.
+B)  Find Listings with the Most Leads in Each Category
+```
+SELECT l.id, l.title, l.category_id
+FROM listings l
+WHERE l.id IN (
+    SELECT lead.listing_id
+    FROM leads lead
+    GROUP BY lead.listing_id
+    HAVING COUNT(lead.id) = (
+        SELECT MAX(lead_count)
+        FROM (SELECT listing_id, COUNT(*) AS lead_count FROM leads GROUP BY listing_id) AS lead_counts
+        WHERE lead_counts.listing_id = l.id
+    )
+);
 
+```
+
+C) Find Users Who Logged in on Two Consecutive Days
+
+```
+SELECT u1.user_id, u1.activity_time
+FROM user_activities_log u1
+JOIN user_activities_log u2 ON u1.user_id = u2.user_id
+WHERE DATE(u2.activity_time) = DATE(u1.activity_time) + INTERVAL 1 DAY
+```
