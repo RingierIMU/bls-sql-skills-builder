@@ -226,6 +226,7 @@ WHERE listings.status = 'active'
 GROUP BY listings.listing_id, listings.title
 ORDER BY total_leads DESC;
 ```
+---
 
 ### **Question 8**: Debug and Fix a Query for Leads Submitted by Guest and Registered Users
 
@@ -237,6 +238,8 @@ FROM listings
 LEFT JOIN leads ON listings.listing_id = leads.listing_id
 GROUP BY listings.listing_id, listings.title;
 ```
+
+---
 
 ### **Question 9**: Get the Average Time Between Listing Creation and First Lead
 
